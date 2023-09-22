@@ -8,12 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var searchBar: UISearchBar!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.searchBar.searchBarStyle = .minimal
+        self.searchBar.searchTextField.backgroundColor = UIColor.white
+        self.searchBar.layer.cornerRadius = 0
+        self.searchBar.clipsToBounds = true
     }
-
-
 }
 
