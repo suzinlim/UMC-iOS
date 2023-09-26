@@ -44,7 +44,6 @@
 		0A8469532AB75609003CAF52 = {
 			isa = PBXGroup;
 			children = (
-				0A3E903F2AC35273003AC436 /* RegisterViewController.swift */,
 				0A84695E2AB75609003CAF52 /* Catstagram */,
 				0A84695D2AB75609003CAF52 /* Products */,
 			);
@@ -61,6 +60,7 @@
 		0A84695E2AB75609003CAF52 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
+				0A3E903F2AC35273003AC436 /* RegisterViewController.swift */,
 				0A3E903B2AC34C04003AC436 /* Color-Extension.swift */,
 				0A84695F2AB75609003CAF52 /* AppDelegate.swift */,
 				0A8469612AB75609003CAF52 /* SceneDelegate.swift */,
