@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A20512A2AC8689900A98F34 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2051292AC8689900A98F34 /* UIView+Extension.swift */; };
+		0A20512C2AC86B9500A98F34 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20512B2AC86B9500A98F34 /* UIVIewController+Extension.swift */; };
+		0A20512E2AC8922C00A98F34 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20512D2AC8922C00A98F34 /* UserInfo.swift */; };
 		0A3E903C2AC34C04003AC436 /* Color-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E903B2AC34C04003AC436 /* Color-Extension.swift */; };
 		0A3E903E2AC34EAF003AC436 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E903D2AC34EAF003AC436 /* LoginViewController.swift */; };
 		0A3E90402AC35273003AC436 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3E903F2AC35273003AC436 /* RegisterViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A2051292AC8689900A98F34 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		0A20512B2AC86B9500A98F34 /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
+		0A20512D2AC8922C00A98F34 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		0A3E903B2AC34C04003AC436 /* Color-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extension.swift"; sourceTree = "<group>"; };
 		0A3E903D2AC34EAF003AC436 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0A3E903F2AC35273003AC436 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -61,10 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				0A3E903F2AC35273003AC436 /* RegisterViewController.swift */,
+				0A20512D2AC8922C00A98F34 /* UserInfo.swift */,
+				0A2051292AC8689900A98F34 /* UIView+Extension.swift */,
 				0A3E903B2AC34C04003AC436 /* Color-Extension.swift */,
 				0A84695F2AB75609003CAF52 /* AppDelegate.swift */,
 				0A8469612AB75609003CAF52 /* SceneDelegate.swift */,
 				0A8469652AB75609003CAF52 /* Main.storyboard */,
+				0A20512B2AC86B9500A98F34 /* UIVIewController+Extension.swift */,
 				0A3E903D2AC34EAF003AC436 /* LoginViewController.swift */,
 				0A8469682AB7560A003CAF52 /* Assets.xcassets */,
 				0A84696A2AB7560A003CAF52 /* LaunchScreen.storyboard */,
@@ -144,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A20512C2AC86B9500A98F34 /* UIVIewController+Extension.swift in Sources */,
+				0A20512A2AC8689900A98F34 /* UIView+Extension.swift in Sources */,
 				0A3E903E2AC34EAF003AC436 /* LoginViewController.swift in Sources */,
 				0A3E90402AC35273003AC436 /* RegisterViewController.swift in Sources */,
+				0A20512E2AC8922C00A98F34 /* UserInfo.swift in Sources */,
 				0A3E903C2AC34C04003AC436 /* Color-Extension.swift in Sources */,
 				0A8469602AB75609003CAF52 /* AppDelegate.swift in Sources */,
 				0A8469622AB75609003CAF52 /* SceneDelegate.swift in Sources */,
