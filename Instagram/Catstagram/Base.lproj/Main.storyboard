@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FJc-ou-wt9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sN4-GD-sWF">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -331,33 +331,55 @@
             </objects>
             <point key="canvasLocation" x="1760" y="-2.1327014218009479"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="rjL-H1-0N0">
             <objects>
-                <viewController id="sN4-GD-sWF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="sN4-GD-sWF" customClass="ProfileViewController" customModule="Catstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3sU-or-bjQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-eG-Ys3">
-                                <rect key="frame" x="157" y="407" width="76" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eD7-s8-pUG">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BV3-A1-79L">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4dR-VT-IWI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uHO-eG-Ys3" firstAttribute="centerX" secondItem="3sU-or-bjQ" secondAttribute="centerX" id="U7F-0g-KZa"/>
-                            <constraint firstItem="uHO-eG-Ys3" firstAttribute="centerY" secondItem="3sU-or-bjQ" secondAttribute="centerY" id="x10-7p-PHZ"/>
+                            <constraint firstItem="4dR-VT-IWI" firstAttribute="trailing" secondItem="eD7-s8-pUG" secondAttribute="trailing" id="3A1-cq-JY7"/>
+                            <constraint firstItem="4dR-VT-IWI" firstAttribute="bottom" secondItem="eD7-s8-pUG" secondAttribute="bottom" id="Et4-qw-P7U"/>
+                            <constraint firstItem="eD7-s8-pUG" firstAttribute="leading" secondItem="4dR-VT-IWI" secondAttribute="leading" id="X8k-yT-cFT"/>
+                            <constraint firstItem="eD7-s8-pUG" firstAttribute="top" secondItem="4dR-VT-IWI" secondAttribute="top" id="dPg-VG-RU8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="tJO-2K-em2"/>
+                    <navigationItem key="navigationItem" id="tba-wf-rkh">
+                        <barButtonItem key="leftBarButtonItem" title="Nickname" id="958-IZ-WkE">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="Qtd-y8-sU3">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="Q40-vd-iTP">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="eD7-s8-pUG" id="WNd-KC-Qy3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpr-sj-1Tg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1245" y="1661"/>
+            <point key="canvasLocation" x="2173.8461538461538" y="1660.6635071090047"/>
         </scene>
         <!--Home-->
         <scene sceneID="yJr-04-Lgu">
@@ -456,7 +478,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Va2-MD-ejR" kind="relationship" relationship="viewControllers" id="Pqr-Gv-QBZ"/>
-                        <segue destination="sN4-GD-sWF" kind="relationship" relationship="viewControllers" id="j7I-8C-vtL"/>
+                        <segue destination="H0m-4A-kPs" kind="relationship" relationship="viewControllers" id="j7I-8C-vtL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqu-pn-IWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -481,6 +503,25 @@
             </objects>
             <point key="canvasLocation" x="188" y="-2"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="43k-vk-YpC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H0m-4A-kPs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="tJO-2K-em2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ect-8O-40f">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sN4-GD-sWF" kind="relationship" relationship="rootViewController" id="dXc-BE-e9m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Equ-4Y-i7N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244.6153846153845" y="1660.6635071090047"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
@@ -489,6 +530,8 @@
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
