@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="206" id="Bul-lz-BPA" customClass="MainImageViewCell" customModule="BeaminDelivery" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bul-lz-BPA" id="Mdp-Do-m39">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="206"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bestpizza" translatesAutoresizingMaskIntoConstraints="NO" id="P1u-8F-fbZ">
+                        <rect key="frame" x="-95" y="-17" width="573" height="281"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="P1u-8F-fbZ" secondAttribute="bottom" constant="-58" id="0tz-KW-i3R"/>
+                    <constraint firstItem="P1u-8F-fbZ" firstAttribute="leading" secondItem="Mdp-Do-m39" secondAttribute="leading" constant="-95" id="C9m-hH-Dd4"/>
+                    <constraint firstAttribute="trailing" secondItem="P1u-8F-fbZ" secondAttribute="trailing" constant="-95" id="K2m-X5-Rjb"/>
+                    <constraint firstItem="P1u-8F-fbZ" firstAttribute="top" secondItem="Mdp-Do-m39" secondAttribute="top" constant="-17" id="f3l-Xi-12i"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="CzR-GG-hJn"/>
+            <point key="canvasLocation" x="49.618320610687022" y="-86.619718309859152"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bestpizza" width="778" height="570"/>
+    </resources>
+</document>

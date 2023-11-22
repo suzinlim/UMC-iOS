@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SortedItemCollectionViewCell" id="gTV-IL-0wX" customClass="SortedItemCollectionViewCell" customModule="carrotMarket" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cimage1" translatesAutoresizingMaskIntoConstraints="NO" id="Pw3-uI-thp">
+                        <rect key="frame" x="5" y="10" width="140" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="140" id="E8S-AN-eSh"/>
+                            <constraint firstAttribute="width" constant="140" id="qPy-cm-cJg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="키친플라워  DW1201CP 얼음뭐하는용도인지는 잘 몰라요.." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-hA-ec8">
+                        <rect key="frame" x="10" y="160" width="130" height="40.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="62,000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQg-7V-4rb" userLabel="Sorted Item Cost">
+                        <rect key="frame" x="10" y="205.66666666666666" width="75" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bbM-hA-ec8" secondAttribute="trailing" constant="10" id="2zU-CN-sIV"/>
+                <constraint firstItem="bbM-hA-ec8" firstAttribute="top" secondItem="Pw3-uI-thp" secondAttribute="bottom" constant="10" id="7K7-iW-0wZ"/>
+                <constraint firstAttribute="trailing" secondItem="Pw3-uI-thp" secondAttribute="trailing" constant="5" id="C59-Wu-CFs"/>
+                <constraint firstItem="tQg-7V-4rb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="O1G-h2-zuS"/>
+                <constraint firstItem="Pw3-uI-thp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Tp5-sO-b4T"/>
+                <constraint firstItem="bbM-hA-ec8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="XSK-YX-Wo4"/>
+                <constraint firstItem="tQg-7V-4rb" firstAttribute="top" secondItem="bbM-hA-ec8" secondAttribute="bottom" constant="5" id="aZI-zB-iPn"/>
+                <constraint firstItem="Pw3-uI-thp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="fus-BY-mOX"/>
+            </constraints>
+            <size key="customSize" width="146" height="245"/>
+            <connections>
+                <outlet property="sortedImage" destination="Pw3-uI-thp" id="3My-Kv-3nm"/>
+                <outlet property="sortedItemCost" destination="tQg-7V-4rb" id="34j-cg-aqo"/>
+                <outlet property="sortedItemTitle" destination="bbM-hA-ec8" id="Rjv-mD-stn"/>
+            </connections>
+            <point key="canvasLocation" x="123.66412213740458" y="74.647887323943664"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cimage1" width="184" height="182"/>
+    </resources>
+</document>
