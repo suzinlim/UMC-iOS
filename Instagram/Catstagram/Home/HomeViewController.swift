@@ -13,6 +13,8 @@ class HomeViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
     var arrayCat : [FeedModel] = []
     
+    let imagePickerViewController = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,8 +29,14 @@ class HomeViewController: UIViewController{
         let input = FeedAPIInput(limit: 30, page: 10)
         FeedDataManager().feedDataManager(input, self)
         
+        imagePickerViewController.delegate = self
+        
     }
-
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerViewController.sourceType = .photoLibrary
+        self.present(imagePickerViewController, animated: true, completion: nil)
+        
+    }
 }
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
@@ -95,5 +103,13 @@ extension HomeViewController {
     func sucessAPI(_ result : [FeedModel]) {
         arrayCat = result
         tableView.reloadData()
+    }
+}
+
+extension HomeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+                print(image)
+            }
     }
 }
