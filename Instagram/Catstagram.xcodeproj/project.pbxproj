@@ -41,7 +41,6 @@
 		0ABD018D2B24ACB90033D7F2 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */; };
 		0ABD01902B24AD660033D7F2 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */; };
 		0ABD01912B24AD660033D7F2 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */; };
-		0AD8C8292B2832A70023E259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C8282B2832A70023E259 /* GoogleService-Info.plist */; };
 		0AE3F1B02AC97F4600F0CFD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */; };
 		A67C64C9F9E31CE9B3B4F9B6 /* Pods_Catstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9EDE62CABC30C0B94663D /* Pods_Catstagram.framework */; };
 /* End PBXBuildFile section */
@@ -83,7 +82,6 @@
 		0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
-		0AD8C8282B2832A70023E259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A761BE95B03AE0A3C8F66231 /* Pods-Catstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.debug.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		DDD9EDE62CABC30C0B94663D /* Pods_Catstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,7 +220,6 @@
 				0A8469682AB7560A003CAF52 /* Assets.xcassets */,
 				0A84696A2AB7560A003CAF52 /* LaunchScreen.storyboard */,
 				0A84696D2AB7560A003CAF52 /* Info.plist */,
-				0AD8C8282B2832A70023E259 /* GoogleService-Info.plist */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -360,7 +357,6 @@
 				0A5E09C22AFD48BD00383AD5 /* ProfileCollectionViewCell.xib in Resources */,
 				0A437F2A2AE052E3003F8235 /* StoryTableViewCell.xib in Resources */,
 				0A437F2E2AE05F17003F8235 /* StoryCollectionViewCell.xib in Resources */,
-				0AD8C8292B2832A70023E259 /* GoogleService-Info.plist in Resources */,
 				0ABD01912B24AD660033D7F2 /* ReelsCollectionViewCell.xib in Resources */,
 				0A8469672AB75609003CAF52 /* Main.storyboard in Resources */,
 			);
