@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIGestureRecognizerDelegate {
     // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
@@ -15,8 +15,9 @@ class ProfileViewController: UIViewController {
         didSet { self.profileCollectionView.reloadData() } // 데이터 값이 변경되면 UI를 업데이트
     }
     
-    // MARK: - Lifecycle
+    var deletedIndex: Int?
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
@@ -24,6 +25,25 @@ class ProfileViewController: UIViewController {
     }
     
     // MARK: - Actions
+    @objc
+    func didLongPressCell(gestureRecognizer: UILongPressGestureRecognizer) { // cell을 길게 눌렀을 때
+        if gestureRecognizer.state != .began { return } // 상태값을 확인하기 위함
+        
+        let position = gestureRecognizer.location(in: profileCollectionView) // 위치 불러오기
+        
+        if let indexPath = profileCollectionView?.indexPathForItem(at: position) {
+            
+            guard let userPosts = self.userPosts else { return }
+            let cellData = userPosts[indexPath.item] // 배열에 있는 데이터를 가져옴
+            self.deletedIndex = indexPath.item
+            
+            if let postIdx = cellData.postIdx {
+                // 삭제 API를 호출
+                UserFeedDataManager().deleteUserFeed(self, postIdx)
+            }
+        }
+    }
+    
     
     // MARK: - Helpers
     private func setupCollectionView() {
@@ -36,6 +56,14 @@ class ProfileViewController: UIViewController {
             UINib(nibName: "ProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ProfileCollectionViewCell.identifier)
         profileCollectionView.register(
             UINib(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
+        
+        let gesture = UILongPressGestureRecognizer( // 제스쳐 생성
+            target: self, // 어디로 전달할건지 -> ProfileCollectionView
+            action: #selector(didLongPressCell(gestureRecognizer:)))
+        gesture.minimumPressDuration = 0.66 // 최소한 눌러야 하는 시간
+        gesture.delegate = self
+        gesture.delaysTouchesBegan = true
+        profileCollectionView.addGestureRecognizer(gesture) // 액션 메소드를 CollectionView에 등록
     }
     
     private func setupData() {
@@ -134,5 +162,13 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 extension ProfileViewController {
     func successFeedAPI(_ result: UserFeedModel) {
         self.userPosts = result.result?.getUserPosts
+    }
+    
+    func successDeletePostAPI(_ isSuccess: Bool) {
+        guard isSuccess else { return }
+        
+        if let deletedIndex = self.deletedIndex {
+            self.userPosts?.remove(at: deletedIndex)
+        }
     }
 }

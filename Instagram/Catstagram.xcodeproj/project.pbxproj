@@ -25,6 +25,7 @@
 		0A46463B2AEAE5E5007268B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46463A2AEAE5E5007268B0 /* ProfileViewController.swift */; };
 		0A5082F92B2DE95500FD760B /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5082F82B2DE95500FD760B /* UserFeedModel.swift */; };
 		0A5082FB2B2DEC4100FD760B /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5082FA2B2DEC4100FD760B /* UserFeedDataManager.swift */; };
+		0A5082FF2B2E0A0100FD760B /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5082FE2B2E0A0100FD760B /* DeleteUserFeed.swift */; };
 		0A5E09C12AFD48BD00383AD5 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E09BF2AFD48BD00383AD5 /* ProfileCollectionViewCell.swift */; };
 		0A5E09C22AFD48BD00383AD5 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5E09C02AFD48BD00383AD5 /* ProfileCollectionViewCell.xib */; };
 		0A5E09C72AFD5EF500383AD5 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E09C52AFD5EF500383AD5 /* PostCollectionViewCell.swift */; };
@@ -64,6 +65,7 @@
 		0A46463A2AEAE5E5007268B0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0A5082F82B2DE95500FD760B /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		0A5082FA2B2DEC4100FD760B /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		0A5082FE2B2E0A0100FD760B /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		0A5E09BF2AFD48BD00383AD5 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		0A5E09C02AFD48BD00383AD5 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A5E09C52AFD5EF500383AD5 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -136,10 +138,27 @@
 		0A5082F72B2DE93F00FD760B /* UserFeedDataManager */ = {
 			isa = PBXGroup;
 			children = (
-				0A5082F82B2DE95500FD760B /* UserFeedModel.swift */,
 				0A5082FA2B2DEC4100FD760B /* UserFeedDataManager.swift */,
+				0A5082FD2B2E09E300FD760B /* DeleteUserFeed */,
+				0A5082FC2B2E09D500FD760B /* UserFeed */,
 			);
 			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		0A5082FC2B2E09D500FD760B /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0A5082F82B2DE95500FD760B /* UserFeedModel.swift */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		0A5082FD2B2E09E300FD760B /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0A5082FE2B2E0A0100FD760B /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
 			sourceTree = "<group>";
 		};
 		0A5E09BE2AFD489400383AD5 /* Cell */ = {
@@ -397,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A20512C2AC86B9500A98F34 /* UIVIewController+Extension.swift in Sources */,
+				0A5082FF2B2E0A0100FD760B /* DeleteUserFeed.swift in Sources */,
 				0A20512A2AC8689900A98F34 /* UIView+Extension.swift in Sources */,
 				0ABD01902B24AD660033D7F2 /* ReelsCollectionViewCell.swift in Sources */,
 				0ABD01892B24A05E0033D7F2 /* FeedUploadModel.swift in Sources */,
