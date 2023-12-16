@@ -109,7 +109,11 @@ extension HomeViewController {
 extension HomeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-                print(image)
+                let imageString = "gs://catstagram-d7fbf.appspot.com/Cat"
+                let input = FeedUploadInput(content: "고양이는 소중해", postImgUrl: [imageString])
+                FeedUploadDataManager().posts(self, input)
+                
+                self.dismiss(animated: true, completion: nil)
             }
     }
 }

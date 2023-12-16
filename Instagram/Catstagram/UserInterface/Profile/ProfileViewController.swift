@@ -11,12 +11,16 @@ class ProfileViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
+    var userPosts: [GetUserPosts]? {
+        didSet { self.profileCollectionView.reloadData() } // 데이터 값이 변경되면 UI를 업데이트
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
-
+        setupData()
     }
     
     // MARK: - Actions
@@ -32,6 +36,10 @@ class ProfileViewController: UIViewController {
             UINib(nibName: "ProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ProfileCollectionViewCell.identifier)
         profileCollectionView.register(
             UINib(nibName: "PostCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
+    }
+    
+    private func setupData() {
+        UserFeedDataManager().getUserFeed(self)
     }
 }
 
@@ -49,7 +57,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         case 0:
             return 1
         default: // 1번째 섹션
-            return 24
+            return userPosts?.count ?? 0
         }
     }
     
@@ -68,7 +76,12 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCollectionViewCell.identifier, for: indexPath) as? PostCollectionViewCell else {
                 fatalError("셀 타입 캐스팅 실패")
             }
-//            cell.setupData() // <-- 데이터 전달
+            let itemIndex = indexPath.item
+            
+            if let cellData = self.userPosts {
+                // 데이터가 있는 경우, cell 데이터를 전달
+                cell.setupData(cellData[itemIndex].postImgUrl) // <-- 데이터 전달
+            }
             return cell
             
         }
@@ -114,5 +127,12 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
         default:
             return CGFloat(1)
         }
+    }
+}
+
+// MARK: - API 통신 메소드
+extension ProfileViewController {
+    func successFeedAPI(_ result: UserFeedModel) {
+        self.userPosts = result.result?.getUserPosts
     }
 }

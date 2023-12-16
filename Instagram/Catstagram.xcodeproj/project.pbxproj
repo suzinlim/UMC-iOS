@@ -23,6 +23,8 @@
 		0A437F2D2AE05F17003F8235 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A437F2B2AE05F17003F8235 /* StoryCollectionViewCell.swift */; };
 		0A437F2E2AE05F17003F8235 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A437F2C2AE05F17003F8235 /* StoryCollectionViewCell.xib */; };
 		0A46463B2AEAE5E5007268B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A46463A2AEAE5E5007268B0 /* ProfileViewController.swift */; };
+		0A5082F92B2DE95500FD760B /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5082F82B2DE95500FD760B /* UserFeedModel.swift */; };
+		0A5082FB2B2DEC4100FD760B /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5082FA2B2DEC4100FD760B /* UserFeedDataManager.swift */; };
 		0A5E09C12AFD48BD00383AD5 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E09BF2AFD48BD00383AD5 /* ProfileCollectionViewCell.swift */; };
 		0A5E09C22AFD48BD00383AD5 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5E09C02AFD48BD00383AD5 /* ProfileCollectionViewCell.xib */; };
 		0A5E09C72AFD5EF500383AD5 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E09C52AFD5EF500383AD5 /* PostCollectionViewCell.swift */; };
@@ -38,6 +40,7 @@
 		0ABD018D2B24ACB90033D7F2 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */; };
 		0ABD01902B24AD660033D7F2 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */; };
 		0ABD01912B24AD660033D7F2 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */; };
+		0AD8C8292B2832A70023E259 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AD8C8282B2832A70023E259 /* GoogleService-Info.plist */; };
 		0AE3F1B02AC97F4600F0CFD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */; };
 		A67C64C9F9E31CE9B3B4F9B6 /* Pods_Catstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9EDE62CABC30C0B94663D /* Pods_Catstagram.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +62,8 @@
 		0A437F2B2AE05F17003F8235 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		0A437F2C2AE05F17003F8235 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A46463A2AEAE5E5007268B0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0A5082F82B2DE95500FD760B /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		0A5082FA2B2DEC4100FD760B /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		0A5E09BF2AFD48BD00383AD5 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		0A5E09C02AFD48BD00383AD5 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A5E09C52AFD5EF500383AD5 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
 		0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
+		0AD8C8282B2832A70023E259 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A761BE95B03AE0A3C8F66231 /* Pods-Catstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.debug.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		DDD9EDE62CABC30C0B94663D /* Pods_Catstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,10 +126,20 @@
 		0A4646392AEAE5C5007268B0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				0A5082F72B2DE93F00FD760B /* UserFeedDataManager */,
 				0A5E09BE2AFD489400383AD5 /* Cell */,
 				0A46463A2AEAE5E5007268B0 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		0A5082F72B2DE93F00FD760B /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A5082F82B2DE95500FD760B /* UserFeedModel.swift */,
+				0A5082FA2B2DEC4100FD760B /* UserFeedDataManager.swift */,
+			);
+			path = UserFeedDataManager;
 			sourceTree = "<group>";
 		};
 		0A5E09BE2AFD489400383AD5 /* Cell */ = {
@@ -174,23 +190,20 @@
 		0A84695E2AB75609003CAF52 /* Catstagram */ = {
 			isa = PBXGroup;
 			children = (
-				0A4646392AEAE5C5007268B0 /* Profile */,
-				0AE3F1AE2AC97F2600F0CFD6 /* Home */,
-				0A3E903F2AC35273003AC436 /* RegisterViewController.swift */,
+				0AD8C82A2B28E4840023E259 /* App */,
+				0AD8C82C2B28E4CA0023E259 /* UserInterface */,
 				0A20512D2AC8922C00A98F34 /* UserInfo.swift */,
 				0A2051292AC8689900A98F34 /* UIView+Extension.swift */,
 				0A3E903B2AC34C04003AC436 /* Color-Extension.swift */,
-				0A84695F2AB75609003CAF52 /* AppDelegate.swift */,
-				0A8469612AB75609003CAF52 /* SceneDelegate.swift */,
 				0A8469652AB75609003CAF52 /* Main.storyboard */,
 				0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */,
 				0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */,
 				0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */,
 				0A20512B2AC86B9500A98F34 /* UIVIewController+Extension.swift */,
-				0A3E903D2AC34EAF003AC436 /* LoginViewController.swift */,
 				0A8469682AB7560A003CAF52 /* Assets.xcassets */,
 				0A84696A2AB7560A003CAF52 /* LaunchScreen.storyboard */,
 				0A84696D2AB7560A003CAF52 /* Info.plist */,
+				0AD8C8282B2832A70023E259 /* GoogleService-Info.plist */,
 			);
 			path = Catstagram;
 			sourceTree = "<group>";
@@ -203,6 +216,34 @@
 				0ABD018A2B24A3650033D7F2 /* FeedUploadDataManager.swift */,
 			);
 			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		0AD8C82A2B28E4840023E259 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0A84695F2AB75609003CAF52 /* AppDelegate.swift */,
+				0A8469612AB75609003CAF52 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0AD8C82B2B28E49F0023E259 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0A3E903F2AC35273003AC436 /* RegisterViewController.swift */,
+				0A3E903D2AC34EAF003AC436 /* LoginViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0AD8C82C2B28E4CA0023E259 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				0A4646392AEAE5C5007268B0 /* Profile */,
+				0AE3F1AE2AC97F2600F0CFD6 /* Home */,
+				0AD8C82B2B28E49F0023E259 /* Authentication */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 		0AE3F1AE2AC97F2600F0CFD6 /* Home */ = {
@@ -300,6 +341,7 @@
 				0A5E09C22AFD48BD00383AD5 /* ProfileCollectionViewCell.xib in Resources */,
 				0A437F2A2AE052E3003F8235 /* StoryTableViewCell.xib in Resources */,
 				0A437F2E2AE05F17003F8235 /* StoryCollectionViewCell.xib in Resources */,
+				0AD8C8292B2832A70023E259 /* GoogleService-Info.plist in Resources */,
 				0ABD01912B24AD660033D7F2 /* ReelsCollectionViewCell.xib in Resources */,
 				0A8469672AB75609003CAF52 /* Main.storyboard in Resources */,
 			);
@@ -372,9 +414,11 @@
 				0ABD018D2B24ACB90033D7F2 /* ReelsViewController.swift in Sources */,
 				0A8469602AB75609003CAF52 /* AppDelegate.swift in Sources */,
 				0A1DE56A2B21DFB9005EB790 /* FeedAPIInput.swift in Sources */,
+				0A5082F92B2DE95500FD760B /* UserFeedModel.swift in Sources */,
 				0A5E09C12AFD48BD00383AD5 /* ProfileCollectionViewCell.swift in Sources */,
 				0A46463B2AEAE5E5007268B0 /* ProfileViewController.swift in Sources */,
 				0A1DE56E2B21E028005EB790 /* FeedDataManager.swift in Sources */,
+				0A5082FB2B2DEC4100FD760B /* UserFeedDataManager.swift in Sources */,
 				0A8469622AB75609003CAF52 /* SceneDelegate.swift in Sources */,
 				0A29AA302ACA9814007F8E5B /* FeedTableViewCell.swift in Sources */,
 			);
