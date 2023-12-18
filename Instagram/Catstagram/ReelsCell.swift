@@ -76,6 +76,7 @@ class ReelsCell: UICollectionViewCell {
         shareImageView]
             .forEach { contentView.addSubview($0) }
         
+        // 레이아웃 설정
         cellTitleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(20) // 20만큼 상단과 떨어지게
             make.leading.equalToSuperview().offset(20) // 20만큼 좌측과 떨어지게
