@@ -41,16 +41,15 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonDidTap(_ sender: UIButton) {
-        // 회원가입 정보를 전달받아서, 그것과 textField 데이터가 일치하면,
-        // 로그인이 되어야 한다.
+        // 회원가입 정보를 전달받아서 textField 데이터가 일치하면,
+        // 로그인 처리
         guard let userInfo = self.userInfo else { return }
+        
         if userInfo.email == self.email
             && userInfo.password == self.password {
+            // 화면 전환
             let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true, completion: nil)
-        } else {
-        
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc // 이전의 화면을 쌓아두지 않고 버려 메모리 관리에 용이, 화면의 생명주기와 관련
         }
         
         
