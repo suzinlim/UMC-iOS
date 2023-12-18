@@ -14,6 +14,21 @@ class ReelsCell: UICollectionViewCell {
     
     var videoView: VideoPlayerView?
     
+    // 릴스
+    let cellTitleLabel = UILabel()
+    
+    // 카메라
+    let cameraImageView = UIImageView()
+    
+    // 댓글
+    let commentImageView = UIImageView()
+    
+    // 좋아요
+    let likeImageView = UIImageView()
+    
+    // 공유하기
+    let shareImageView = UIImageView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -29,7 +44,11 @@ class ReelsCell: UICollectionViewCell {
     }
     
     private func setupAttribute() {
+        cellTitleLabel.text = "릴스"
+        cellTitleLabel.font = .boldSystemFont(ofSize: 25)
+        cellTitleLabel.textAlignment = .left
         
+        cameraImageView.image = UIImage(systemName: "camera")
     }
     
     private func setupLayout() {
@@ -38,6 +57,17 @@ class ReelsCell: UICollectionViewCell {
         
         videoView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        
+        [cellTitleLabel, cameraImageView,
+        likeImageView,
+        commentImageView,
+        shareImageView]
+            .forEach { contentView.addSubview($0) }
+        
+        cellTitleLabel.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(20) // 20만큼 상단과 떨어지게
+            make.leading.equalToSuperview().offset(20) // 20만큼 좌측과 떨어지게
         }
     }
 }
