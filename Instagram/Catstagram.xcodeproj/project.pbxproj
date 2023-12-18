@@ -39,9 +39,13 @@
 		0ABD01892B24A05E0033D7F2 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD01882B24A05E0033D7F2 /* FeedUploadModel.swift */; };
 		0ABD018B2B24A3650033D7F2 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018A2B24A3650033D7F2 /* FeedUploadDataManager.swift */; };
 		0ABD018D2B24ACB90033D7F2 /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */; };
-		0ABD01902B24AD660033D7F2 /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */; };
-		0ABD01912B24AD660033D7F2 /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */; };
 		0AE3F1B02AC97F4600F0CFD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */; };
+		0AF596D72B3038950044C95F /* ReelsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF596D62B3038950044C95F /* ReelsCell.swift */; };
+		0AF596D92B3041050044C95F /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF596D82B3041050044C95F /* VideoPlayerView.swift */; };
+		0AF596E22B3057DE0044C95F /* christmastree.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF596DF2B304D420044C95F /* christmastree.mp4 */; };
+		0AF596E32B3057E00044C95F /* christmastree2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF596DE2B304D420044C95F /* christmastree2.mp4 */; };
+		0AF596E42B3057E30044C95F /* fireworks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF596E12B304D420044C95F /* fireworks.mp4 */; };
+		0AF596E52B3057E60044C95F /* photo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0AF596E02B304D420044C95F /* photo.mp4 */; };
 		A67C64C9F9E31CE9B3B4F9B6 /* Pods_Catstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD9EDE62CABC30C0B94663D /* Pods_Catstagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,9 +84,13 @@
 		0ABD01882B24A05E0033D7F2 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
 		0ABD018A2B24A3650033D7F2 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
-		0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
-		0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
 		0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0AF596D62B3038950044C95F /* ReelsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCell.swift; sourceTree = "<group>"; };
+		0AF596D82B3041050044C95F /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		0AF596DE2B304D420044C95F /* christmastree2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = christmastree2.mp4; path = ../../../../Downloads/christmastree2.mp4; sourceTree = "<group>"; };
+		0AF596DF2B304D420044C95F /* christmastree.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = christmastree.mp4; path = ../../../../Downloads/christmastree.mp4; sourceTree = "<group>"; };
+		0AF596E02B304D420044C95F /* photo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = photo.mp4; path = ../../../../Downloads/photo.mp4; sourceTree = "<group>"; };
+		0AF596E12B304D420044C95F /* fireworks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = fireworks.mp4; path = ../../../../Downloads/fireworks.mp4; sourceTree = "<group>"; };
 		A761BE95B03AE0A3C8F66231 /* Pods-Catstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.debug.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		DDD9EDE62CABC30C0B94663D /* Pods_Catstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F875C062BE8B3572DD5A2C69 /* Pods-Catstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstagram.release.xcconfig"; path = "Target Support Files/Pods-Catstagram/Pods-Catstagram.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,11 +222,15 @@
 				0A3E903B2AC34C04003AC436 /* Color-Extension.swift */,
 				0A8469652AB75609003CAF52 /* Main.storyboard */,
 				0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */,
-				0ABD018E2B24AD660033D7F2 /* ReelsCollectionViewCell.swift */,
-				0ABD018F2B24AD660033D7F2 /* ReelsCollectionViewCell.xib */,
+				0AF596D62B3038950044C95F /* ReelsCell.swift */,
+				0AF596D82B3041050044C95F /* VideoPlayerView.swift */,
 				0A20512B2AC86B9500A98F34 /* UIVIewController+Extension.swift */,
 				0A8469682AB7560A003CAF52 /* Assets.xcassets */,
 				0A84696A2AB7560A003CAF52 /* LaunchScreen.storyboard */,
+				0AF596DF2B304D420044C95F /* christmastree.mp4 */,
+				0AF596DE2B304D420044C95F /* christmastree2.mp4 */,
+				0AF596E12B304D420044C95F /* fireworks.mp4 */,
+				0AF596E02B304D420044C95F /* photo.mp4 */,
 				0A84696D2AB7560A003CAF52 /* Info.plist */,
 			);
 			path = Catstagram;
@@ -351,13 +363,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5E09C82AFD5EF500383AD5 /* PostCollectionViewCell.xib in Resources */,
+				0AF596E42B3057E30044C95F /* fireworks.mp4 in Resources */,
+				0AF596E52B3057E60044C95F /* photo.mp4 in Resources */,
+				0AF596E32B3057E00044C95F /* christmastree2.mp4 in Resources */,
 				0A84696C2AB7560A003CAF52 /* LaunchScreen.storyboard in Resources */,
+				0AF596E22B3057DE0044C95F /* christmastree.mp4 in Resources */,
 				0A29AA312ACA9814007F8E5B /* FeedTableViewCell.xib in Resources */,
 				0A8469692AB7560A003CAF52 /* Assets.xcassets in Resources */,
 				0A5E09C22AFD48BD00383AD5 /* ProfileCollectionViewCell.xib in Resources */,
 				0A437F2A2AE052E3003F8235 /* StoryTableViewCell.xib in Resources */,
 				0A437F2E2AE05F17003F8235 /* StoryCollectionViewCell.xib in Resources */,
-				0ABD01912B24AD660033D7F2 /* ReelsCollectionViewCell.xib in Resources */,
 				0A8469672AB75609003CAF52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +429,6 @@
 				0A20512C2AC86B9500A98F34 /* UIVIewController+Extension.swift in Sources */,
 				0A5082FF2B2E0A0100FD760B /* DeleteUserFeed.swift in Sources */,
 				0A20512A2AC8689900A98F34 /* UIView+Extension.swift in Sources */,
-				0ABD01902B24AD660033D7F2 /* ReelsCollectionViewCell.swift in Sources */,
 				0ABD01892B24A05E0033D7F2 /* FeedUploadModel.swift in Sources */,
 				0A1DE56C2B21DFF5005EB790 /* FeedModel.swift in Sources */,
 				0A3E903E2AC34EAF003AC436 /* LoginViewController.swift in Sources */,
@@ -425,6 +439,7 @@
 				0A3E90402AC35273003AC436 /* RegisterViewController.swift in Sources */,
 				0A20512E2AC8922C00A98F34 /* UserInfo.swift in Sources */,
 				0AE3F1B02AC97F4600F0CFD6 /* HomeViewController.swift in Sources */,
+				0AF596D72B3038950044C95F /* ReelsCell.swift in Sources */,
 				0ABD018B2B24A3650033D7F2 /* FeedUploadDataManager.swift in Sources */,
 				0A3E903C2AC34C04003AC436 /* Color-Extension.swift in Sources */,
 				0ABD018D2B24ACB90033D7F2 /* ReelsViewController.swift in Sources */,
@@ -434,6 +449,7 @@
 				0A5E09C12AFD48BD00383AD5 /* ProfileCollectionViewCell.swift in Sources */,
 				0A46463B2AEAE5E5007268B0 /* ProfileViewController.swift in Sources */,
 				0A1DE56E2B21E028005EB790 /* FeedDataManager.swift in Sources */,
+				0AF596D92B3041050044C95F /* VideoPlayerView.swift in Sources */,
 				0A5082FB2B2DEC4100FD760B /* UserFeedDataManager.swift in Sources */,
 				0A8469622AB75609003CAF52 /* SceneDelegate.swift in Sources */,
 				0A29AA302ACA9814007F8E5B /* FeedTableViewCell.swift in Sources */,

@@ -11,7 +11,7 @@ class ReelsViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var collectionView: UICollectionView!
     
-//    private let videoURLStrArr = [] // 배열 안에 저장할 동영상 제목을 추가
+    private let videoURLStrArr = ["christmastree", "fireworks", "christmastree2", "photo"] // 배열 안에 저장할 동영상 제목을 추가
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -25,7 +25,10 @@ class ReelsViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "ReelsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
+        
+        collectionView.register(
+            ReelsCell.self,
+            forCellWithReuseIdentifier: ReelsCell.identifier)
     }
 }
 
@@ -36,7 +39,10 @@ extension ReelsViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCollectionViewCell.identifier, for: indexPath) as? ReelsCollectionViewCell else { fatalError() }
+        guard let cell = collectionView.dequeueReusableCell( // collectionView에 cell을 연결
+            withReuseIdentifier: ReelsCell.identifier,
+            for: indexPath) as? ReelsCell else { return UICollectionViewCell() }
+        cell.setupURL(videoURLStrArr.randomElement()!)
         return cell
     }
 }
