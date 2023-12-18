@@ -58,15 +58,25 @@ class CostTableViewCell: UITableViewCell {
             cellData.price = "23,000원"
         }
         
-        print("cartViewController: \(cartViewController)")
         cartViewController?.transferData(price: cellData.price, selectedItem: cellData.selectedItem)
 
-        if sender == selectedRadioButton {
-            // 이미 선택된 라디오 버튼을 누르면 아무 것도 하지 않습니다.
+        if sender == selectedRadioButton { return }
+        
+        // 라디오 버튼을 포함하는 셀을 찾은 후, 해당 셀의 indexPath를 가져와서 선택
+        var superView = sender.superview
+        while !(superView is UITableViewCell) {
+            superView = superView?.superview
+        }
+        guard let cell = superView as? UITableViewCell,
+            let tableView = cell.superview as? UITableView,
+            let indexPath = tableView.indexPath(for: cell) else {
             return
         }
-
-        // 선택된 라디오 버튼을 업데이트하고 이전에 선택된 라디오 버튼을 해제합니다.
+        
+        tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+        tableView.delegate?.tableView?(tableView, didSelectRowAt: indexPath)
+        
+        // 선택된 라디오 버튼을 업데이트하고 이전에 선택된 라디오 버튼을 해제
         selectedRadioButton?.isSelected = false
         sender.isSelected = true
         selectedRadioButton = sender

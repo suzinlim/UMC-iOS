@@ -12,12 +12,6 @@ class InquiryCartViewController: UIViewController {
 
     var cartItemData: (price: String, selectedItem: String)?  // 데이터를 저장할 프로퍼티
     
-    func transferData(price: String, selectedItem: String) {
-        print("InquiryCartViewController - 선택된 항목: \(selectedItem)")
-        print("InquiryCartViewController - 가격: \(price)")
-    }
-
-
     // 데이터를 설정하는 메서드
     func setCartItemData(price: String, selectedItem: String) {
         cartItemData = (price: price, selectedItem: selectedItem)
@@ -46,7 +40,6 @@ extension InquiryCartViewController : UITableViewDelegate, UITableViewDataSource
             }
             // 데이터가 설정되었는지 확인하고 설정
             if let data = cartItemData {
-                print("출력")
                 print(data.price)
                 print(data.selectedItem)
                 cell.price.text = data.price
