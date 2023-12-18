@@ -47,8 +47,19 @@ class ReelsCell: UICollectionViewCell {
         cellTitleLabel.text = "릴스"
         cellTitleLabel.font = .boldSystemFont(ofSize: 25)
         cellTitleLabel.textAlignment = .left
+        cellTitleLabel.textColor = .white
+        
+        // 공통되는 속성은 배열로 처리
+        [cameraImageView, shareImageView, commentImageView, likeImageView]
+            .forEach {
+                $0.contentMode = .scaleAspectFit
+                $0.tintColor = .white
+            }
         
         cameraImageView.image = UIImage(systemName: "camera")
+        shareImageView.image = UIImage(systemName: "paperplane")
+        commentImageView.image = UIImage(systemName: "message")
+        likeImageView.image = UIImage(systemName: "suit.heart")
     }
     
     private func setupLayout() {
@@ -68,6 +79,31 @@ class ReelsCell: UICollectionViewCell {
         cellTitleLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(20) // 20만큼 상단과 떨어지게
             make.leading.equalToSuperview().offset(20) // 20만큼 좌측과 떨어지게
+        }
+        
+        cameraImageView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(20)
+            make.trailing.equalToSuperview().offset(-20)
+        }
+        
+        shareImageView.snp.makeConstraints { make in
+            make.bottom.equalToSuperview().offset(-50)
+            make.trailing.trailing.equalToSuperview().offset(-20)
+            make.width.height.equalTo(35)
+        }
+        
+        let space = CGFloat(20)
+        
+        commentImageView.snp.makeConstraints { make in
+            make.bottom.equalTo(shareImageView.snp.top).offset(-space)
+            make.centerX.equalTo(shareImageView)
+            make.width.height.equalTo(35)
+        }
+        
+        likeImageView.snp.makeConstraints { make in
+            make.bottom.equalTo(commentImageView.snp.top).offset(-space)
+            make.centerX.equalTo(shareImageView)
+            make.width.height.equalTo(35)
         }
     }
 }
