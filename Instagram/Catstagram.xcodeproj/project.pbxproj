@@ -221,9 +221,6 @@
 				0A2051292AC8689900A98F34 /* UIView+Extension.swift */,
 				0A3E903B2AC34C04003AC436 /* Color-Extension.swift */,
 				0A8469652AB75609003CAF52 /* Main.storyboard */,
-				0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */,
-				0AF596D62B3038950044C95F /* ReelsCell.swift */,
-				0AF596D82B3041050044C95F /* VideoPlayerView.swift */,
 				0A20512B2AC86B9500A98F34 /* UIVIewController+Extension.swift */,
 				0A8469682AB7560A003CAF52 /* Assets.xcassets */,
 				0A84696A2AB7560A003CAF52 /* LaunchScreen.storyboard */,
@@ -267,8 +264,9 @@
 		0AD8C82C2B28E4CA0023E259 /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				0A4646392AEAE5C5007268B0 /* Profile */,
 				0AE3F1AE2AC97F2600F0CFD6 /* Home */,
+				0AF596E82B308A890044C95F /* Reels */,
+				0A4646392AEAE5C5007268B0 /* Profile */,
 				0AD8C82B2B28E49F0023E259 /* Authentication */,
 			);
 			path = UserInterface;
@@ -283,6 +281,16 @@
 				0AE3F1AF2AC97F4600F0CFD6 /* HomeViewController.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		0AF596E82B308A890044C95F /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				0ABD018C2B24ACB90033D7F2 /* ReelsViewController.swift */,
+				0AF596D62B3038950044C95F /* ReelsCell.swift */,
+				0AF596D82B3041050044C95F /* VideoPlayerView.swift */,
+			);
+			path = Reels;
 			sourceTree = "<group>";
 		};
 		4DE813CBFA6520BF67DC559E /* Frameworks */ = {

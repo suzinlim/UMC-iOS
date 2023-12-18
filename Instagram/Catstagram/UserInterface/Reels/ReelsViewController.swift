@@ -37,7 +37,7 @@ class ReelsViewController: UIViewController {
     // 타이머를 통해 다음 화면 이동
     private func starLoop() {
         // 2초마다 반복해서 moveNextPage() 호출
-        let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
+        let _ = Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { _ in
             self.moveNextPage()
         }
     }
